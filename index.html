@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdourahmane Tintou Kamara - Lead Data Scientist </title>
+    
+    <!-- Meta tags / Open Graph -->
+    <meta name="description" content="Portfolio et CV de Abdourahmane Tintou Kamara, Lead Data Scientist">
+    <meta property="og:title" content="Abdourahmane Tintou Kamara, Data Scientist">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/5Ww3gPSM/ppp.png">
+    <meta property="og:url" content="https://kamaradatascientistai.github.io/index.html">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/5Ww3gPSM/ppp.png">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/5Ww3gPSM/ppp.png">
+    <link rel="canonical" href="https://kamaradatascientistai.github.io/index.html">
+
+
+
+    <!-- Google Fonts & CanvasJS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+    <script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            backgroundColor: "transparent",
+            animationEnabled: true,
+            title: {
+                text: "Langages Informatiques",
+                fontColor: "#f8fafc",
+                fontFamily: "Inter",
+                fontSize: 18,
+                horizontalAlign: "left"
+            },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                innerRadius: "60%",
+                indexLabelFontSize: 13,
+                indexLabelFontColor: "#94a3b8",
+                indexLabelFontFamily: "Inter",
+                indexLabel: "{label} - #percent%",
+                radius: "80%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 9, label: "Python", color: "#3b82f6" },
+                    { y: 9, label: "SQL", color: "#06b6d4" },
+                    { y: 5, label: "Bash", color: "#64748b" },
+                    { y: 1, label: "PySpark", color: "#f97316" },
+                    { y: 9, label: "R", color: "#2563eb" },
+                    { y: 2, label: "SAS", color: "#8b5cf6" }
+                ]
+            }]
+        });
+        chart.render();
+
+        var barchart = new CanvasJS.Chart("barchartContainer", {
+            backgroundColor: "transparent",
+            animationEnabled: true,
+            title: {
+                text: "Stack",
+                fontColor: "#f8fafc",
+                fontFamily: "Inter",
+                fontSize: 18,
+                horizontalAlign: "left"
+            },
+            axisX: {
+                labelFontColor: "#94a3b8",
+                labelFontFamily: "Inter",
+                tickColor: "transparent",
+                lineColor: "transparent"
+            },
+            axisY2: {
+                title: "Par années d'expérience",
+                titleFontColor: "#64748b",
+                titleFontSize: 12,
+                labelFontColor: "#94a3b8",
+                gridColor: "#334155"
+            },
+            data: [{
+                type: "bar",
+                axisYType: "secondary",
+                color: "#38bdf8",
+                indexLabelFontColor: "#f8fafc",
+                indexLabel: "{y}",
+                dataPoints: [
+                    { label: "Gephi", y: 2 },
+                    { label: "Looker Studio", y: 1 },
+                    { label: "DSS Dataiku", y: 5 },
+                    { label: "Azure", y: 3 },
+                    { label: "GCP", y: 1 },
+                    { label: "Databricks", y: 1 },
+                    { label: "Rapidminer", y: 1 },
+                    { label: "Anaconda", y: 5 },
+                    { label: "R studio", y: 9 },
+                    { label: "Postgres SQL", y: 5 },
+                    { label: "Jupyter notebook", y: 9 }
+                ]
+            }]
+        }); 
+        barchart.render();
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 24px;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 0 24px 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: fit-content;
+            position: sticky;
+            top: 24px;
+            overflow: hidden;
+        }
+
+        .cover-img {
+            width: calc(100% + 48px);
+            height: 130px;
+            background-image: url("https://i.ibb.co/zWJthYtg/stack.jpg");
+            background-size: cover;
+            background-position: center;
+            margin-left: -24px;
+            margin-right: -24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-image: url("https://i.ibb.co/5Ww3gPSM/ppp.png");
+            background-size: cover;
+            background-position: center;
+            border: 4px solid var(--bg-card);
+            box-shadow: 0 0 0 2px var(--accent);
+            margin-top: -70px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sidebar h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .sidebar h1 a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .sidebar .title {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background-color: var(--border);
+            color: var(--accent);
+            transition: all 0.2s ease;
+        }
+
+        .social-btn:hover {
+            background-color: var(--accent);
+            color: var(--bg-main);
+            transform: translateY(-2px);
+        }
+
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Main Content Style */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            min-width: 0;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Timeline Lists */
+        .timeline-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .timeline-list li {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--border);
+        }
+
+        .timeline-list li::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 6px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent);
+        }
+
+        .timeline-list b {
+            color: var(--text-main);
+        }
+
+        /* --- Style du Carrousel des Projets --- */
+        .carousel-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 16px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .carousel-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .carousel-container::-webkit-scrollbar-track {
+            background: var(--bg-main);
+            border-radius: 4px;
+        }
+
+        .carousel-container::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        .carousel-container::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+
+        .project-card {
+            flex: 0 0 350px;
+            scroll-snap-align: start;
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+            flex-grow: 1;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-top: auto;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+            list-style: none;
+        }
+
+        .skill-tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                flex: 0 0 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar avec photo de couverture -->
+        <aside class="sidebar">
+            <div class="cover-img"></div>
+            <div class="profile-img"></div>
+            <h1><a href="index.html">Abdourahmane<br>Tintou Kamara</a></h1>
+            <div class="title">Data Scientist</div>
+            
+            <div class="social-links">
+                <!-- WhatsApp -->
+                <a href="http://wa.me/+221771536861" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp">
+                    <svg viewBox="0 0 512 512"><path d="M 469.257812 250.492188 C 469.257812 365.242188 375.507812 458.269531 259.839844 458.269531 C 223.132812 458.269531 188.652344 448.878906 158.636719 432.4375 L 42.703125 469.257812 L 80.492188 357.746094 C 61.4375 326.449219 50.460938 289.703125 50.460938 250.476562 C 50.476562 135.726562 144.199219 42.703125 259.867188 42.703125 C 375.523438 42.730469 469.257812 135.742188 469.257812 250.492188 Z M 259.824219 75.832031 C 162.753906 75.832031 83.789062 154.199219 83.789062 250.535156 C 83.789062 288.757812 96.253906 324.140625 117.324219 352.933594 L 95.347656 417.792969 L 162.976562 396.304688 C 190.792969 414.550781 224.078125 425.179688 259.824219 425.179688 C 356.898438 425.179688 435.886719 346.828125 435.886719 250.492188 C 435.917969 154.199219 356.910156 75.832031 259.824219 75.832031 Z M 365.589844 298.355469 C 364.285156 296.253906 360.863281 294.972656 355.742188 292.414062 C 350.636719 289.855469 325.367188 277.546875 320.679688 275.875 C 315.949219 274.164062 312.527344 273.304688 309.105469 278.40625 C 305.726562 283.511719 295.878906 294.972656 292.859375 298.394531 C 289.867188 301.804688 286.878906 302.234375 281.746094 299.71875 C 276.613281 297.128906 260.0625 291.789062 240.449219 274.445312 C 225.191406 260.925781 214.882812 244.273438 211.90625 239.167969 C 208.890625 234.078125 211.601562 231.324219 214.148438 228.792969 C 216.441406 226.5 219.28125 222.839844 221.851562 219.851562 C 224.425781 216.886719 225.273438 214.785156 226.984375 211.378906 C 228.667969 207.972656 227.820312 205.007812 226.554688 202.433594 C 225.273438 199.875 215.023438 174.839844 210.726562 164.644531 C 206.457031 154.460938 202.183594 156.144531 199.179688 156.144531 C 196.191406 156.144531 192.769531 155.726562 189.347656 155.726562 C 185.925781 155.726562 180.363281 156.964844 175.675781 162.070312 C 170.988281 167.175781 157.71875 179.484375 157.71875 204.550781 C 157.71875 229.640625 176.089844 253.832031 178.664062 257.222656 C 181.25 260.605469 214.1875 313.722656 266.363281 334.113281 C 318.5625 354.492188 318.5625 347.691406 327.964844 346.828125 C 337.398438 345.964844 358.34375 334.519531 362.601562 322.640625 C 366.882812 310.707031 366.882812 300.480469 365.589844 298.355469 Z"/></svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:kamaradatascientistiai@gmail.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="Email">
+                    <svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/kamaradatascientistai2" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                    <svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
+                </a>
+                <!-- ResearchGate -->
+                <a href="https://www.researchgate.net/profile/Abdourahmane-Tintou-Kamara" target="_blank" rel="noopener noreferrer" class="social-btn" title="ResearchGate">
+                    <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em;">RG</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- À propos de moi -->
+            <section class="card">
+                <h2>À propos de moi</h2>
+                <p>
+                    Fort de plusieurs années d'expérience en qualité de Data Scientist spécialiste Big Data orienté problématiques métiers, j'ai exercé dans plusieurs domaines comme l'assistance automatisée à la conduite chez <a href="https://www.moncoyote.com" target="_blank">Coyote Group</a>, le marketing géo-ciblé en offline (Wi-Fi) et en online (Ad tracking, Analytics, SDK, Algorithmes de Bidding...), la prédiction d'affluence dans la grande distribution, le prêt-à-porter et la restauration rapide (Flunch, Buffalo, MacDo...).
+                </p>
+                <br>
+                <p>
+                    Grâce à une solide formation en <b>Économétrie Appliquée</b> à l'Université des Sciences et Technologie de Lille, j'ai très tôt été confronté à des cas pratiques réels, tutorés par des experts en Ingénierie Statistique, en Data Science et en Data-mining issus de grandes enseignes et institutions françaises (Crédit Agricole, Auchan, Decathlon, ENSAE, CLERSÉ...). Par la suite, j'ai notamment renforcé mon profil par une certification de <b>Développeur Python</b> délivrée par le GRETA des Hauts-de-Seine qui m'a permis de devenir plus autonome en programmation informatique et en algorithmie.
+                </p>
+                <br>
+                <p>
+                    Sur une base régulière, je m'emploie à booster mes compétences en rejoignant divers projets collaboratifs (Kaggle, Analytics Vidhya) tout en faisant beaucoup de veille technologique sur les nouveaux sujets apparus avec l'IA comme le <b>Vibe Coding</b> et la <b>Programmation Agentique</b>. Je produis beaucoup de documentations sur les <b>Best Practices</b> en matière de Workflow, de MLOps, de méthodes AGILE et de cloud computing pour la Data Science. Enfin, je voue une importance particulière à la gouvernance des données et je suis très intéressé par les mises à jour liées aux réglementations générales des données (consentement, RGPD...).
+                </p>
+                <br>
+                <p>
+                    Mes sujets de prédilection sont l'Analyse des données de Réseaux (voir <a href="https://www.digitalmethods.net/Dmi/CrawlingItalianGreenPassDebate" target="_blank">DMI 2022 réalisé à l'Université d'Amsterdam</a> et <a href="https://controverses-esiee.fr/sna/Session09_bestof/BestOf-2022-football-transferts.pdf" target="_blank">Controverse-Esiee Paris</a>), la construction de packages python orientés Data Science (voir <a href="https://test.pypi.org/user/atkamara/" target="_blank">Profil PyPI</a>), l'IA générative, la vision par ordinateur, le Traitement Automatique du Langage Naturel (TALN ou NLP), le Machine Learning et le Deep Learning.
+                </p>
+            </section>
+
+            <!-- Formation -->
+            <section class="card">
+                <h2>Formation</h2>
+                <ul class="timeline-list">
+                    <li><b>De Sept 2015 à Sept 2017 :</b> Master en Économétrie Appliquée (<b>Mention Assez Bien</b>) - Université des Sciences et Technologie de Lille, France.</li>
+                    <li><b>De 2012 à 2015 :</b> Licence en Économie et Gestion avec Spécialisation en 3ème année en Économie (<b>Mention Bien, Major de Promo en L2 et Président FASEG English Club</b>) - Université Cheikh Anta Diop de Dakar, Sénégal.</li>
+                </ul>
+            </section>
+
+            <!-- Expérience Professionnelle -->
+            <section class="card">
+                <h2>Expérience Professionnelle</h2>
+                <ul class="timeline-list">
+                    <li>
+                        <b>Depuis Oct 2019 : Lead Data Scientist chez Coyote System, Suresnes, France</b><br>
+                        Au sein du Datalab dont les expertises sont déclinées autour de la Data Science (Analyses, Études et Modélisations), de la BI et du Data Engineering. Mon rôle principal est de mobiliser nos écosystèmes Databricks, Dataiku Data Science Studio (DSS), Azure Cloud et Couchbase pour développer et déployer des architectures de données, consolider les données d'alerting chez Coyote, appuyer la communication et aider les équipes produits à créer de nouvelles fonctionnalités basées sur l'analyse de données et le Machine Learning.
+                    </li>
+                    <li>
+                        <b>De Sept 2017 à Oct 2019 : Data Scientist Junior chez Fidzup, Clichy, France</b><br>
+                        Au sein de la BU Data Science rattachée à la DSI, mon rôle de Data Scientist a été de répondre aux différentes demandes d'extraction de données issues des boîtiers physiques (installés en concessions et en points de ventes), les croiser avec les données "média" de nos plateformes de bidding (mediasmart, beeswax) et produire des analyses (Panier moyen, parcours clients, CPV...), des cartographies (folium, R), des tableaux de bord (Shiny+Docker) et des algorithmes de machine learning (ensemblistes) à destination des équipes Logistique, d'Account Management, de la Direction et des autres BU opérationnelles.
+                    </li>
+                    <li>
+                        <b>De Fév à Juillet 2017 : Data Scientist Stagiaire en Big Data chez Praedic, Capelle-en-Pévèle, France</b><br>
+                        En qualité de stagiaire, j'ai travaillé sur la consolidation des données de prévision à travers notamment l'intégration de la météo, j'ai aussi participé aux automatisations de Feature Engineering, à la mise en production de sondes de webscraping développées avec le framework Scrapy, la construction de vues SQL sur BigQuery, de Cloud Functions sur Google Cloud Platform (GCP) et j'ai également contribué à de nombreuses études réalisées pour des clients grands comptes comme Cofidis, RTM et Jules. Par ailleurs, j'ai mené la Recherche et Développement (R&D) sur la version 1 de TensorFlow et sur l'apport des modèles de séries temporelles autorégressifs dans la fiabilité des prévisions.
+                    </li>
+                    <li>
+                        <b>De Jan à Mars 2016 : Stagiaire en Recherche au CLERSÉ, Villeneuve d'Ascq, France(<a href="https://drive.google.com/file/d/1zzI1izUtS9F5so1f1IIZWbhHXj3jbLiK/view?usp=drivesdk">Voir Publication</a>)</b><br>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Projets -->
+            <section class="card">
+                <h2>Projets</h2>
+                <div class="carousel-container">
+                    
+                    <div class="project-card">
+                        <h3>2024 : Expert Data-Scientist - Expertise France - UE 🇪🇺 - DGID</h3>
+                        <p>
+                            Participation au projet <a href="https://www.lesopportunites.com/opportunite/senegal/avis-de-recrutement/systeme-dinformation/expertise-france-recrute-un-expert-data-scientist-a-dakar-au-senegal/" target="_blank">Datamining</a> basé à Dakar pour la détection des fraudes à la déclaration des impôts grâce au machine learning.
+                        </p>
+                        <img src="https://miro.medium.com/v2/1*tXzKx2LzJkN4KZ7tOhowjA.gif" alt="Détection de fraude fiscale - Expertise France / DGID" class="project-img">
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Neural Net Numpy (Package PyPI)</h3>
+                        <p>
+                            Conception et développement d'une librairie complète de réseaux de neurones construite entièrement <i>from scratch</i> avec NumPy. Téléchargeable sur <a href="https://test.pypi.org/project/neural-net-numpy/" target="_blank">Test PyPI</a>.
+                        </p>
+                        <img src="https://i.ibb.co/47VcR80/nn.png" alt="Neural Net Numpy PyPI Package" class="project-img">
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Crawling Italian Green Pass Debate</h3>
+                        <p>
+                            Analyse de réseaux et web scraping menés dans le cadre de la DMI 2022 à l'Université d'Amsterdam. Documentation : <a href="https://www.digitalmethods.net/Dmi/CrawlingItalianGreenPassDebate" target="_blank">Crawling Italian Green Pass Debate</a>.
+                        </p>
+                        <img src="https://i.ibb.co/0j1zCphH/t-l-chargement.png" alt="Évolution temporelle du débat - DMI" class="project-img">
+                    </div>
+                    
+<div class="project-card">
+                        <h3>Football Transfert Market</h3>
+                        <p>
+                            
+                        <a href="https://controverses-esiee.fr/sna/Session09_bestof/BestOf-2022-football-transferts.pdf" target="_blank">Controverse-Esiee Paris</a>
+                        </p>
+                        </p>
+                        <img src="https://i.ibb.co/TMSGX5M3/IMG-20260726-140411.jpg" alt="Évolution temporelle du débat - DMI" class="project-img">
+            
+                    </div>
+                </div>
+            </section>
+
+            <!-- Compétences & Charts -->
+            <section class="card">
+                <h2>Compétences</h2>
+                <ul class="skills-grid">
+                    <li class="skill-tag">Développement Python</li>
+                    <li class="skill-tag">Machine Learning</li>
+                    <li class="skill-tag">Data Engineering</li>
+                    <li class="skill-tag">TALN / NLP</li>
+                    <li class="skill-tag">Fouille de données (Textmining)</li>
+                    <li class="skill-tag">Datamining</li>
+                    <li class="skill-tag">Business Intelligence</li>
+                    <li class="skill-tag">Data Visualisation</li>
+                    <li class="skill-tag">Analyse de Réseaux</li>
+                    <li class="skill-tag">Mathématiques</li>
+                </ul>
+
+                <div class="charts-container">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                    <div id="barchartContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+            </section>
+
+            <!-- Langues -->
+            <section class="card">
+                <h2>Langues</h2>
+                <ul class="skills-grid">
+                    <li class="skill-tag" style="background-color: var(--border); color: var(--text-main);">Français : Langue maternelle</li>
+                    <li class="skill-tag" style="background-color: var(--border); color: var(--text-main);">Anglais : Fluide</li>
+                </ul>
+            </section>
+
+            
+<!-- Médias & Prises de parole -->
+<section class="card">
+    <h2>Médias & Prises de parole</h2>
+    <ul class="timeline-list">
+        <li>
+            <b>Avril 2014 : Émission "ELA Master: BEM vs FASEG" – Télévision Nationale Sénégalaise (RTS1)</b><br>
+            Pitch et débat en <b>Business English</b> autour du développement économique et de l'entrepreneuriat devant un jury international (présidé par Brittany Brown).
+            <br>
+            <a href="https://youtu.be/ZhcPQsbaiQ4?si=YMUnAPfX_PvWf0HU" target="_blank" rel="noopener noreferrer"> Regarder la vidéo sur YouTube (RTS1)</a>
+        </li>
+    </ul>
+</section>
+        
+          
+        </main>
+    </div>
+
+</body>
+    </html>
